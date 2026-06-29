@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #050816;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#gameCanvas {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid cyan;
+    background: #0b1020;
+}
+
+#ui {
+    width: 800px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+/* Hidden by default */
+#mobileControls {
+    display: none;
+}
+
+/* Show only on small screens */
+@media (max-width: 768px) {
+
+    #mobileControls {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    #mobileControls button {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        margin: 5px;
+    }
+}

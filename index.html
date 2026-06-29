@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Echo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div id="ui">
+        <div>High Score: <span id="highScore">0</span></div>
+        <div>Score: <span id="score">0</span></div>
+        <div>Health: <span id="health">3</span></div>
+        <div>Round: <span id="round">1</span></div>
+        <div>Clones: <span id="clones">0</span></div>
+        <div>Event: <span id="event">None</span></div>
+    </div>
+
+    <div id="mobileControls">
+        <button id="up">↑</button>
+        <button id="left">←</button>
+        <button id="down">↓</button>
+        <button id="right">→</button>
+    </div>
+
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+    <script src="./game.js"></script>
+
+</body>
+
+</html>
