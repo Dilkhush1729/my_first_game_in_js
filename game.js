@@ -3,6 +3,44 @@ const ctx = canvas.getContext("2d");
 
 const keys = {};
 
+const startBtn = document.getElementById("startBtn");
+const pauseBtn = document.getElementById("pauseBtn");
+const restartBtn = document.getElementById("restartBtn");
+
+startBtn.addEventListener("click",()=>{
+
+    gameStarted=true;
+
+    if(backgroundMusic.paused){
+
+        backgroundMusic.play();
+    }
+});
+
+pauseBtn.addEventListener("click",()=>{
+
+    paused=!paused;
+
+    if(paused){
+
+        backgroundMusic.pause();
+
+        pauseBtn.innerHTML="▶";
+
+    }else{
+
+        backgroundMusic.play();
+
+        pauseBtn.innerHTML="⏸";
+    }
+});
+
+restartBtn.addEventListener("click",()=>{
+
+    restartGame();
+
+});
+
 document.addEventListener("keydown", e => {
     keys[e.key.toLowerCase()] = true;
 
