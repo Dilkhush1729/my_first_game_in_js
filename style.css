@@ -75,6 +75,8 @@ body {
     #mobileHUD{
 
         display:flex;
+        position: fixed;
+        bottom: 40%;
     }
 }
 
